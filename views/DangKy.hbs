@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="your-logo.png" alt="Logo">
+        </div>
+        <nav class="top-nav">
+            <a href="DangNhap.html">Đăng Nhập</a> | <a href="DangKy.html">Đăng Ký</a> | <a href="#">Giỏ Hàng</a>
+        </nav>
+    </header>
+
+    <nav class="main-nav">
+        <a href="#">Trang chủ</a>
+        <a href="#">Đặt hàng</a>
+        <a href="#">Hỗ trợ</a>
+        <a href="#">Thanh toán</a>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+    </nav>
+
+    <aside class="left-sidebar">
+        <h3>Loại LapTop</h3>
+        <ul>
+            <li>DELL</li>
+            <li>ASUS</li>
+            <li>HP</li>
+            <li>MACBOOK</li>
+        </ul>
+    </aside>
+
+    <main class="content">
+        <h2>Thông tin đăng ký</h2>
+        <form id="registerForm">
+           <div class="form-group">
+               <label for="name">Tên</label>
+               <input type="text" id="name" name="name" required>
+           </div>
+           <div class="form-group">
+               <label for="address">Địa chỉ</label>
+               <input type="text" id="address" name="address" required>
+           </div>
+           <div class="form-group">
+               <label for="phone">Điện thoại</label>
+               <input type="text" id="phone" name="phone" required>
+           </div>
+           <div class="form-group">
+               <label for="password">Mật khẩu</label>
+               <input type="password" id="password" name="password" required>
+           </div>
+           <div class="form-group">
+               <label for="birthDate">Ngày sinh</label>
+               <input type="date" id="birthDate" name="birthDate" required>
+           </div>
+           <div class="form-group">
+               <label for="email">Email</label>
+               <input type="email" id="email" name="email" required>
+           </div>
+           <button class="confirm-button" type="submit">Xác Nhận</button>
+       </form>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

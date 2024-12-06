@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Nhà Sản Xuất</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" />
+        </div>
+        <div class="top-nav">
+            <span>Nhân Viên</span> | <a href="#">Đăng Xuất</a>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="main-nav">
+        <a href="#">Trang chủ</a>
+        <a href="#">Quản lý sản phẩm</a>
+        <a href="#">Quản lý khách hàng</a>
+        <a href="#">Quản lý giỏ hàng</a>
+        <a href="#">Quản lý đặt hàng</a>
+        <a href="#">Thống kê</a>
+        <div class="search-bar">
+            <input type="text" placeholder="search" />
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="left-sidebar">
+            <h3>Loại LapTop</h3>
+            <ul>
+                <li>DELL</li>
+                <li>ASUS</li>
+                <li>HP</li>
+                <li>MACBOOK</li>
+            </ul>
+        </aside>
+
+        <!-- Content Area -->
+        <main class="content">
+            <h2>Thông tin nhà sản xuất</h2>
+            <form>
+                <div class="form-group">
+                    <label for="maNSX">Mã NSX</label>
+                    <input type="text" id="maNSX" name="maNSX" />
+                </div>
+                <div class="form-group">
+                    <label for="tenNSX">Tên NSX</label>
+                    <input type="text" id="tenNSX" name="tenNSX" />
+                </div>
+                <div class="form-buttons">
+                    <button type="button" class="btn add">Thêm</button>
+                    <button type="button" class="btn edit">Sửa</button>
+                    <button type="button" class="btn delete">Xóa</button>
+                    <button type="button" class="btn save">Lưu</button>
+                </div>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mã NSX</th>
+                        <th>Tên NSX</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pu01</td>
+                        <td>Hoa Kỳ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>

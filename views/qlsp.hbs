@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Sản Phẩm</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" />
+        </div>
+        <div class="top-nav">
+            <span>Nhân Viên</span> | <a href="#">Đăng Xuất</a>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="main-nav">
+        <a href="#">Trang chủ</a>
+        <a href="#">Quản lý sản phẩm</a>
+        <a href="#">Quản lý khách hàng</a>
+        <a href="#">Quản lý giỏ hàng</a>
+        <a href="#">Quản lý đặt hàng</a>
+        <a href="#">Thống kê</a>
+        <div class="search-bar">
+            <input type="text" placeholder="search" />
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="left-sidebar">
+            <h3>Loại LapTop</h3>
+            <ul>
+                <li>DELL</li>
+                <li>ASUS</li>
+                <li>HP</li>
+                <li>MACBOOK</li>
+            </ul>
+        </aside>
+
+        <!-- Content Area -->
+        <main class="content">
+            <h2>Thông tin sản phẩm</h2>
+            <form>
+                <div class="form-group">
+                    <label for="maSP">Mã Sản Phẩm</label>
+                    <input type="text" id="maSP" name="maSP" />
+                </div>
+                <div class="form-group">
+                    <label for="tenSP">Tên Sản Phẩm</label>
+                    <input type="text" id="tenSP" name="tenSP" />
+                </div>
+                <div class="form-group">
+                    <label for="giaTien">Giá Tiền</label>
+                    <input type="text" id="giaTien" name="giaTien" />
+                </div>
+                <div class="form-group">
+                    <label for="chiTietSP">Chi Tiết Sản Phẩm</label>
+                    <input type="text" id="chiTietSP" name="chiTietSP" />
+                </div>
+                <div class="form-group">
+                    <label for="nhaSX">Nhà Sản Xuất</label>
+                    <input type="text" id="nhaSX" name="nhaSX" />
+                </div>
+                <div class="form-group">
+                    <label for="maLoai">Mã Loại</label>
+                    <input type="text" id="maLoai" name="maLoai" />
+                </div>
+                <div class="form-group">
+                    <label for="anhSP">Ảnh Sản Phẩm</label>
+                    <input type="text" id="anhSP" name="anhSP" />
+                </div>
+                <div class="form-buttons">
+                    <button type="button" class="btn add">Thêm</button>
+                    <button type="button" class="btn edit">Sửa</button>
+                    <button type="button" class="btn delete">Xóa</button>
+                    <button type="button" class="btn save">Lưu</button>
+                </div>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mã Sản Phẩm</th>
+                        <th>Tên Sản Phẩm</th>
+                        <th>Giá Tiền</th>
+                        <th>Chi Tiết Sản Phẩm</th>
+                        <th>Nhà Sản Xuất</th>
+                        <th>Mã Loại</th>
+                        <th>Ảnh Sản Phẩm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SP01</td>
+                        <td>Laptop Dell</td>
+                        <td>20,000,000 VNĐ</td>
+                        <td>Cấu hình mạnh</td>
+                        <td>Dell</td>
+                        <td>LT01</td>
+                        <td>image.png</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>
